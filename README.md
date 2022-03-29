@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Metacare
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Design sample of Metacare analytics section of an enterprise software.
 
 ## Available Scripts
 
