@@ -14,7 +14,7 @@ text-decoration: none;
 font-size: 18px;
 
 &:hover {
-	background: #252831;
+	/* background: #252831; */
 	border-left: 4px solid green;
 	cursor: pointer;
 }
@@ -31,7 +31,7 @@ padding-left: 3rem;
 display: flex;
 align-items: center;
 text-decoration: none;
-color: #f5f5f5;
+/* color: #f5f5f5; */
 font-size: 18px;
 
 &:hover {
@@ -47,7 +47,7 @@ const showSubnav = () => setSubnav(!subnav);
 
 return (
 	<>
-	<SidebarLink to={item.path}
+	<SidebarLink to='#'
 	onClick={item.subNav && showSubnav}>
 		<div>
 		{item.icon}
@@ -65,8 +65,8 @@ return (
 		item.subNav.map((item, index) => {
 		return (
 			<DropdownLink to={item.path} key={index}>
-			{item.icon}
-			<SidebarLabel>{item.title}</SidebarLabel>
+        {item.icon}
+        <SidebarLabel>{item.title}</SidebarLabel>
 			</DropdownLink>
 		);
 		})}
