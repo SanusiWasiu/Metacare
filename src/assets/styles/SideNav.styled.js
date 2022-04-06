@@ -1,6 +1,12 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
+export const SidebarWrapper = styled.div`
+    margin: 0px;
+    display: flex;
+    width: 262px;
+`;
+
 export const Nav = styled.div`
     /* background: #15171c; */
     height: 80px;
@@ -8,13 +14,14 @@ export const Nav = styled.div`
     justify-content: flex-start;
     align-items: center;
     color: #fff;
+    width: 262px;
 `;
 
 export const NavIcon = styled(Link)`
     margin-left: 2rem;
     font-size: 2rem;
-    height: 80px;
-    display: flex;
+    /* height: 80px; */
+    /* display: flex; */
     justify-content: flex-start;
     align-items: center;
     /* color: #fff; */
@@ -37,6 +44,7 @@ export const SidebarNav = styled.nav`
     transition: 350ms;
     z-index: 10;
     border: 1px solid #ECEBF5;
+    /* margin-bottom: 0px; */
 `;
 
 export const SidebarWrap = styled.div`
@@ -44,7 +52,7 @@ export const SidebarWrap = styled.div`
 `;
 
 export const NavTop = styled.div`
-    margin: 10px;
+    /* margin: 10px; */
     border: 1px solid #ECEBF5;
     box-sizing: border-box;
     border-radius: 8px;
@@ -52,6 +60,7 @@ export const NavTop = styled.div`
     width: 221px;
     margin-left: 22px;
     margin-top: 21px;
+    margin-bottom: 0px;
     /* padding: 12px; */
     /* align-items: center; */
     h1{
