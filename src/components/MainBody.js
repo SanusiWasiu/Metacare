@@ -1,7 +1,8 @@
 import React from 'react'
 // import 'semantic-ui-css/semantic.min.css'
 import styled from "styled-components";
-import MainTop from './MainTop';
+import MainTop from './main-body-components/MainTop';
+import { Tabs } from './main-body-components/Tabs';
 
 const BodyWrapper = styled.div`
     /* margin: 30px; */
@@ -23,9 +24,7 @@ const MainBody = () => {
   return (
     <BodyWrapper>
         <MainTop />
-        {/* <div>
-            <Input icon='search' placeholder='Ask us any question' />
-        </div> */}
+        <Tabs />
     </BodyWrapper>
   )
 }

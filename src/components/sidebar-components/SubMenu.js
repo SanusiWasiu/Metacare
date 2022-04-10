@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { SidebarLabel, SidebarLink, DropdownLink } from '../../assets/styles/SubMenu.styled';
 
 
@@ -29,9 +29,9 @@ return (
 			<DropdownLink to={item.path} key={index}>
         {item.icon}
         <SidebarLabel>{item.title}</SidebarLabel>
-			</DropdownLink>
+		</DropdownLink>
 		);
-		})}
+	})}
 	</>
 );
 };

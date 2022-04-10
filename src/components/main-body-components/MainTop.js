@@ -1,6 +1,4 @@
-import React from 'react'
 import { Top, Frame, Counter, Divider, Circle, DropIcon, SearchBar, Search } from '../../assets/styles/Top.styled'
-// import { Input } from 'semantic-ui-react';
 import { FaRegBell } from "react-icons/fa";
 import { FiChevronDown } from "react-icons/fi";
 import { IoMdSearch } from 'react-icons/io';

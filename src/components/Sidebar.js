@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 // import styled from "styled-components";
 // import { Link } from "react-router-dom";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
-import { SidebarData } from "./SidebarData";
-import SubMenu from "./SubMenu";
+import { SidebarData } from "./sidebar-components/SidebarData";
+import SubMenu from "./sidebar-components/SubMenu";
 import { IconContext } from "react-icons/lib";
 // import Hamburger from 'hamburger-react'
-import { NavIcon, SidebarNav, SidebarWrap, NavTop, Nav, SidebarWrapper } from "../../assets/styles/SideNav.styled"
+import { NavIcon, Sidebarav, SidebarWrap, NavTop, Nav, SidebarWrapper } from "../assets/styles/SideNav.styled"
 
-const Sidebarn = () => {
+const Sidebar = () => {
 const [sidebar, setSidebar] = useState(true);
 
 useEffect(() => {
@@ -38,14 +38,8 @@ return (
             <NavIcon to="#">
                 <FaIcons.FaBars onClick={showSidebar} />
             </NavIcon>
-            {/* <h1
-                style={{ textAlign: "center",
-                        marginLeft: "200pxçç",
-                        color: "green" }}
-            >
-            </h1> */}
 		</Nav>
-		<SidebarNav sidebar={sidebar}>
+		<Sidebarav sidebar={sidebar}>
             <SidebarWrap>
                  <NavIcon to="#">
                     <AiIcons.AiOutlineClose onClick={showSidebar}  />
@@ -54,14 +48,12 @@ return (
                      <h1>Metacare</h1>
                      <h2>adeyinka@metacare.app</h2>
                  </NavTop>
-                {SidebarData.map((item, index) => {
-                return <SubMenu item={item} key={index} />;
-                })}
+                {SidebarData.map((item, index) =>  <SubMenu item={item} key={index} />)}
             </SidebarWrap>
-		</SidebarNav>
+		</Sidebarav>
 	</IconContext.Provider>
 	</SidebarWrapper>
 );
 };
 
-export default Sidebarn;
+export default Sidebar;

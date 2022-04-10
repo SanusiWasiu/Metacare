@@ -1,6 +1,6 @@
 import React from 'react'
-import MainBody from '../components/main-body/MainBody';
-import Sidebarn from '../components/sidenav/Sidebarn';
+import MainBody from '../components/MainBody';
+import Sidebar from '../components/Sidebar';
 import styled from "styled-components";
 
 const PageWrapper = styled.div`
@@ -11,7 +11,7 @@ const PageWrapper = styled.div`
 const Page = () => {
   return (
     <PageWrapper>
-        <Sidebarn />
+        <Sidebar />
         <MainBody />
     </PageWrapper>
   )

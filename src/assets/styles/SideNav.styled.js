@@ -31,7 +31,7 @@ export const NavIcon = styled(Link)`
     }
 `;
 
-export const SidebarNav = styled.nav`
+export const Sidebarav = styled.nav`
     /* background: #15171c; */
     width: 262px;
     height: 100vh;
