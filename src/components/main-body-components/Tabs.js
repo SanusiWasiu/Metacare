@@ -4,7 +4,7 @@ import Tab from '@mui/material/Tab';
 import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
-import TabWrapper from '../../assets/styles/TabWrapper.styled'
+import { TabWrapper } from '../../assets/styles/TabWrapper.styled'
 
 export const Tabs = () => {
   const [value, setValue] = React.useState('1');
